@@ -52,7 +52,7 @@ crud-fastapi/
 ```bash
 git clone https://github.com/yourusername/fastapi-ecommerce-api.git
 cd fastapi-ecommerce-api
-#2️⃣ Create Virtual Environment
+### 2️⃣ Create Virtual Environment
 
 Windows
 
@@ -61,7 +61,7 @@ python -m venv crud
 Activate
 
 crud\Scripts\activate
-# 3️⃣ Install Dependencies
+### 3️⃣ Install Dependencies
 pip install fastapi
 pip install uvicorn
 pip install sqlalchemy
@@ -78,7 +78,7 @@ DATABASE_URL = "mysql+pymysql://root:YOUR_PASSWORD@localhost:3306/restaurant_db"
 
 Note: If your MySQL password contains special characters such as @, encode them in the URL.
 
-# 5️⃣ Run the Application
+### 4 Run the Application
 uvicorn main:app --reload
 Server starts at
 http://127.0.0.1:8000
@@ -133,11 +133,8 @@ Deployment on Render/AWS
 Kadari Vasavi
 🎓 B.Tech Computer Science Student
 🔗 LinkedIn
-
-[https://www.linkedin.com/in/vasavi-kadari](https://www.linkedin.com/in/vasavi-kadari)
-
+https://www.linkedin.com/in/vasavi-kadari
 💻 Passionate about
-
 Python
 FastAPI
 SQL
