@@ -84,9 +84,9 @@ def delete_restaurant(
 
     return {"message": "Restaurant deleted successfully"}
 
-@app.get("/restaurants/address")
-def address_restaurants(db: Session = Depends(get_db),restaurant_id: int=None):
-    restaurant_list = crud.get_restaurant(db, restaurant_id)
+@app.get("/restaurants/address/{address}")
+def address_restaurants(address: str, db: Session = Depends(get_db)):
+    restaurant_list = crud.get_restaurant_by_address(db, address)
 
     if not restaurant_list:
         raise HTTPException(status_code=404, detail="Restaurant not found")

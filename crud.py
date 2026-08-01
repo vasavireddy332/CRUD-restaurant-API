@@ -21,6 +21,12 @@ def get_restaurant(db: Session, restaurant_id: int):
     ).first()
 
 
+def get_restaurant_by_address(db: Session, address: str):
+    return db.query(models.Restaurant).filter(
+        models.Restaurant.address == address
+    ).all()
+
+
 def update_restaurant(
     db: Session,
     restaurant_id: int,
